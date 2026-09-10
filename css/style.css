@@ -48,8 +48,8 @@ img{max-width:100%;display:block}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
 
 /* NAVBAR */
-.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 0;transition:var(--transition);background:transparent}
-.navbar.scrolled{background:var(--dark);padding:10px 0;box-shadow:0 2px 20px rgba(0,0,0,.3)}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 0;transition:var(--transition);background:var(--primary)}
+.navbar.scrolled{background:var(--secondary);padding:10px 0;box-shadow:0 2px 20px rgba(0,0,0,.3)}
 .navbar .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap}
 .nav-logo{display:flex;align-items:center;gap:10px}
 .nav-logo-img{height:44px;width:auto;display:block}
@@ -65,8 +65,8 @@ img{max-width:100%;display:block}
 .nav-hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
 /* HERO */
-.hero{min-height:100vh;background:var(--dark);display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px}
-.hero::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:linear-gradient(135deg,var(--primary),var(--secondary));clip-path:polygon(20% 0,100% 0,100% 100%,0 100%);opacity:.15}
+.hero{min-height:100vh;background:linear-gradient(135deg,var(--primary),var(--secondary));display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px}
+.hero::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:linear-gradient(135deg,rgba(255,255,255,.1),rgba(255,255,255,.02));clip-path:polygon(20% 0,100% 0,100% 100%,0 100%)}
 .hero .container{position:relative;z-index:2;text-align:center}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(250,204,21,.1);border:1px solid rgba(250,204,21,.3);color:var(--accent);padding:8px 20px;border-radius:var(--radius-sm);font-size:.8rem;font-weight:600;margin-bottom:24px;text-transform:uppercase;letter-spacing:1px}
 .hero-title{font-size:3.4rem;font-weight:800;color:var(--text-light);line-height:1.1;margin-bottom:20px}
@@ -85,8 +85,8 @@ img{max-width:100%;display:block}
 .hero-feature h4{color:rgba(255,255,255,.9);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 
 /* PAGE HEADER */
-.page-header{padding:130px 0 60px;background:var(--dark);position:relative;overflow:hidden;text-align:center}
-.page-header::before{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,var(--primary),var(--secondary));clip-path:polygon(30% 0,100% 0,100% 100%,0 100%);opacity:.12}
+.page-header{padding:130px 0 60px;background:linear-gradient(135deg,var(--primary),var(--secondary));position:relative;overflow:hidden;text-align:center}
+.page-header::before{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,rgba(255,255,255,.1),rgba(255,255,255,.02));clip-path:polygon(30% 0,100% 0,100% 100%,0 100%)}
 .page-header h1{font-size:2.8rem;font-weight:800;color:var(--text-light);margin-bottom:12px;position:relative;z-index:1}
 .page-header p{font-size:1.05rem;color:rgba(255,255,255,.6);max-width:550px;margin:0 auto;position:relative;z-index:1}
 
