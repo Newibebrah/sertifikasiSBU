@@ -1,0 +1,9 @@
+/* TEAM */
+Yash Pijar - Jasa SBU & SKK
+Location: Tangerang Selatan, Banten, Indonesia
+Contact: arteksiconsultant@gmail.com
+
+/* SITE */
+Language: Bahasa Indonesia
+Doctype: HTML5
+Framework: Vanilla JS
