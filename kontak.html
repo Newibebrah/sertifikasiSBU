@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#111827">
+  <meta name="theme-color" content="#0EA5E9">
   <title>Hubungi Yash Pijar - Konsultasi SBU & SKK Gratis</title>
 <meta name="title" content="Hubungi Yash Pijar - Konsultasi SBU & SKK Gratis">
 <meta name="description" content="Konsultasi gratis via WhatsApp atau form. Kantor kami melayani Banten, Tangerang Selatan, dan Jabodetabek. Hubungi tim ahli kami sekarang.">
@@ -27,15 +27,10 @@
 <meta name="geo.placename" content="Tangerang Selatan, Banten">
 <meta name="geo.position" content="-6.2886;106.7179">
 <meta name="ICBM" content="-6.2886, 106.7179">
-  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/images/logo-192.png">
 
-  <link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/poppins-800.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -111,7 +106,7 @@
         <div class="location-map reveal">
           <div class="map-card">
             <h3><i class="fas fa-paper-plane"></i> Kirim Pesan</h3>
-            <form action="#" method="POST">
+            <form id="kirimPesanForm" action="#" method="POST">
               <div class="form-group">
                 <label for="nama">Nama <span class="required">*</span></label>
                 <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
@@ -273,5 +268,27 @@
 
   <script defer src="js/main.js"></script>
 
+<script>
+    (function () {
+      var form = document.getElementById('kirimPesanForm');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var nama = document.getElementById('nama').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var telp = document.getElementById('telepon').value.trim();
+        var layanan = document.getElementById('layanan').value;
+        var pesan = document.getElementById('pesan').value.trim();
+        if (!nama || !telp) { alert('Harap isi Nama dan Nomor HP.'); return; }
+        var msg = 'Halo Tim Yash Pijar Arteksi, saya ' + nama + '.';
+        msg += '\n\nLayanan: ' + layanan;
+        msg += '\n\nNo. HP: ' + telp;
+        if (email) msg += '\nEmail: ' + email;
+        if (pesan) msg += '\nPesan: ' + pesan;
+        window.open('https://wa.me/6281977255927?text=' + encodeURIComponent(msg), '_blank');
+        form.reset();
+      });
+    })();
+  </script>
 </body>
 </html>
