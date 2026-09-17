@@ -160,6 +160,7 @@ img{max-width:100%;display:block}
 .service-price i{position:relative;z-index:1}
 .service-price:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(250,204,21,.5);filter:brightness(1.05);color:var(--dark)}
 .service-price:active{transform:scale(.97)}
+.price-box .service-price{max-width:520px;margin:18px auto 4px;padding:14px 22px;font-size:.85rem}
 
 /* CERTIFICATES (contoh sertifikat) */
 .certificates-section{background:var(--light)}
