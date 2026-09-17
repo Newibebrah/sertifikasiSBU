@@ -330,6 +330,7 @@ img{max-width:100%;display:block}
 .service-card,.mitra-card,[data-href]{cursor:pointer}
 
 /* LOCATION */
+.article-body p{text-align:justify}
 .location-info{display:flex;flex-direction:column;gap:24px}
 .location-detail{background:var(--light);border:1px solid var(--border);padding:28px;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)}
 .location-detail h3{font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:20px;display:flex;align-items:center;gap:10px}
