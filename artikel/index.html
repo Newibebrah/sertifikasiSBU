@@ -79,7 +79,9 @@
         <h2 class="section-title">Wawasan Terbaru</h2>
         <p class="section-subtitle">Artikel pilihan untuk membantu Anda memahami dunia sertifikasi</p>
       </div>
-      <div class="articles-grid">
+      <div class="carousel-scroll">
+        <button class="carousel-btn prev" onclick="scrollCarousel(this, -1)" aria-label="Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+        <div class="articles-grid scroll-x">
 
         <a href="cara-mendapatkan-sbujk.html" class="article-card">
           <div class="article-image"><i class="fas fa-building"></i></div>
@@ -135,6 +137,8 @@
           </div>
         </a>
 
+        </div>
+        <button class="carousel-btn next" onclick="scrollCarousel(this, 1)" aria-label="Selanjutnya"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
   </section>

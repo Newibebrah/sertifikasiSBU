@@ -81,7 +81,9 @@
         <h2 class="section-title">Mitra Terpercaya Kami</h2>
         <p class="section-subtitle">Klik salah satu mitra untuk informasi lebih lanjut mengenai afiliasi dan layanan kami.</p>
       </div>
-      <div class="mitra-grid" id="institusiGrid">
+      <div class="carousel-scroll">
+        <button class="carousel-btn prev" onclick="scrollCarousel(this, -1)" aria-label="Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+        <div class="mitra-grid scroll-x mitra-track" id="institusiGrid">
         <div class="mitra-card reveal" onclick="openMitraModal(0)">
           <div class="logo-wrap"><img loading="lazy" decoding="async" src="assets/Mitra/PUPR.svg" alt="Kementerian PUPR" width="74" height="74"></div>
           <h4>PUPR</h4>
@@ -117,6 +119,8 @@
           <h4>BNSP</h4>
           <p>Badan Nasional Sertifikasi Profesi</p>
         </div>
+        </div>
+        <button class="carousel-btn next" onclick="scrollCarousel(this, 1)" aria-label="Selanjutnya"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
