@@ -155,7 +155,19 @@ img{max-width:100%;display:block}
 .service-card:hover .mitra-card-icon{border-color:var(--primary)}
 .service-card h4{font-size:.92rem;font-weight:700;color:var(--dark);margin-bottom:8px}
 .service-card p{font-size:.82rem;color:var(--text-muted)}
-.service-price{margin:14px 0;padding:10px;background:var(--dark);color:#fff;font-size:.85rem;font-weight:600}
+.service-price{display:block;margin:14px 0;padding:10px;background:var(--dark);color:#fff;font-size:.85rem;font-weight:600;text-align:center;border-radius:var(--radius-sm);text-decoration:none;transition:var(--transition)}
+.service-price:hover{background:var(--primary);color:#fff;transform:translateY(-2px)}
+
+/* CERTIFICATES (contoh sertifikat) */
+.certificates-section{background:var(--light)}
+.cert-header{text-align:center;max-width:680px;margin:0 auto 32px}
+.cert-header .section-title{margin-bottom:8px}
+.cert-header p{color:var(--text-muted);font-size:.88rem}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:960px;margin:0 auto}
+.cert-item{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:12px;box-shadow:var(--shadow-sm);transition:var(--transition)}
+.cert-item:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.cert-img{width:100%;height:280px;object-fit:contain;background:#f1f5f9;border-radius:var(--radius-sm);border:1px solid var(--border)}
+.cert-caption{margin-top:10px;font-size:.75rem;font-weight:600;color:var(--text-muted);text-align:center}
 
 /* SERVICE LIST (profil) */
 .services-list{display:flex;flex-direction:column;gap:32px;max-width:960px;margin:0 auto}
