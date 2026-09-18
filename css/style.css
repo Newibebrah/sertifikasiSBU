@@ -149,10 +149,6 @@ img{max-width:100%;display:block}
 .service-card .icon img{width:70%;height:70%;object-fit:contain;border-radius:50%}
 .service-card:hover .icon img{transform:scale(1.08)}
 .service-card:hover .icon{background:var(--primary);color:#fff}
-.service-card .mitra-card-icon{background:var(--light)!important;border:1px solid var(--border)}
-.service-card .mitra-card-icon img{width:36px;height:36px;object-fit:contain;transition:var(--transition)}
-.service-card:hover .mitra-card-icon img{transform:scale(1.15)}
-.service-card:hover .mitra-card-icon{border-color:var(--primary)}
 .service-card h4{font-size:.92rem;font-weight:700;color:var(--dark);margin-bottom:8px}
 .service-card p{font-size:.82rem;color:var(--text-muted)}
 .service-price{position:relative;display:flex;align-items:center;justify-content:center;gap:8px;width:max-content;max-width:100%;margin:14px auto 4px;padding:12px 18px;background:linear-gradient(135deg,#1F2937,#111827);color:#fff;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;line-height:1.4;border-radius:50px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 20px rgba(17,24,39,.28);transition:var(--transition);overflow:hidden;white-space:nowrap;text-decoration:none}
@@ -164,10 +160,6 @@ img{max-width:100%;display:block}
 .service-card .service-price{margin:16px auto 12px;font-size:.72rem}
 .price-box .service-price{min-width:360px;max-width:520px;margin:18px auto 6px;padding:14px 26px;font-size:.85rem;background:var(--light);color:var(--dark);border:none;box-shadow:0 10px 26px rgba(2,132,199,.35)}
 .price-box .service-price:hover{background:#fff;color:var(--dark);box-shadow:0 14px 32px rgba(2,132,199,.45)}
-.btn-card{background:transparent;color:var(--primary);border:2px solid var(--primary);box-shadow:none}
-.btn-card i{transition:var(--transition)}
-.btn-card:hover{background:var(--primary);color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(14,165,233,.28);border-color:var(--primary)}
-.btn-card:hover i{transform:translateX(4px)}
 
 /* CERTIFICATES (contoh sertifikat) */
 .certificates-section{background:var(--light)}
@@ -204,10 +196,7 @@ img{max-width:100%;display:block}
 .badge-item:hover{border-color:var(--primary);color:var(--primary);background:var(--bg-alt)}
 .badge-item i{display:block;font-size:1.1rem;margin-bottom:4px;color:var(--primary)}
 
-.badge-grid-ringkasan{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:900px;margin:24px auto 0}
-.section-ringkasan{padding:0 0 32px}
 .section-badge{padding:40px 0}
-.section-badge-alt{padding:40px 0;background:var(--bg-alt)}
 
 /* SERVICE DETAIL PAGES */
 .overview-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
@@ -218,10 +207,6 @@ img{max-width:100%;display:block}
 .overview-card ul{display:flex;flex-direction:column;gap:10px}
 .overview-card ul li{display:flex;align-items:flex-start;gap:10px;font-size:.86rem;color:var(--text-dark);line-height:1.6}
 .overview-card ul li i{color:var(--primary);margin-top:4px;flex-shrink:0}
-.checklist{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-.checklist li{display:flex;align-items:flex-start;gap:12px;background:var(--light);border:1px solid var(--border);padding:15px 18px;font-size:.9rem;color:var(--text-dark);transition:var(--transition)}
-.checklist li:hover{border-color:var(--primary);transform:translateX(5px)}
-.checklist li i{color:var(--primary);margin-top:3px;flex-shrink:0}
 .classif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .classif-card{background:var(--light);border:1px solid var(--border);border-top:3px solid var(--primary);padding:24px 20px;transition:var(--transition)}
 .classif-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
@@ -285,12 +270,7 @@ img{max-width:100%;display:block}
 .mitra-card:hover::before{opacity:1}
 
 .mitra-badge-grid{max-width:800px;margin:0 auto}
-.mitra-badge{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 12px}
-.mitra-badge img{width:48px;height:48px;object-fit:contain;border-radius:50%;background:#f8fafc;padding:6px;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:var(--transition)}
-.mitra-badge:hover img{transform:scale(1.15);box-shadow:0 4px 14px rgba(14,165,233,.2)}
-.mitra-badge span{font-size:.75rem;font-weight:600;color:var(--text-dark)}
 
-.mitra-closing{padding:16px 0 0}
 .mitra-closing-box{max-width:600px;margin:0 auto 28px;background:var(--bg-alt);border:1px solid var(--primary);border-left:4px solid var(--primary);padding:12px 18px;display:flex;align-items:flex-start;gap:10px}
 .mitra-closing-icon{width:22px;height:22px;background:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.7rem;color:#fff;margin-top:3px}
 .mitra-closing-box p{font-size:.82rem;color:var(--text-muted);line-height:1.6;margin:0}
@@ -328,7 +308,6 @@ img{max-width:100%;display:block}
 .carousel-scroll #institusiGrid{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;touch-action:pan-x;padding:6px 44px 10px;-ms-overflow-style:none;scrollbar-width:none}
 .carousel-scroll #institusiGrid::-webkit-scrollbar{display:none}
 .carousel-scroll #institusiGrid>.mitra-card{flex:0 0 240px;scroll-snap-align:center}
-.carousel-scroll .scroll-x.gallery-track>*{flex:0 0 300px;max-width:300px}
 .service-card,.mitra-card,[data-href]{cursor:pointer}
 
 /* LOCATION */
@@ -386,14 +365,9 @@ img{max-width:100%;display:block}
 #institusiGrid .mitra-card p{font-size:.7rem}
 
 /* MITRA SLIDER */
-.mitra-slider{position:relative;max-width:960px;margin:40px auto 0;overflow:hidden;padding:0 48px}
 .mitra-slider-track{display:flex;transition:transform .5s cubic-bezier(.25,.46,.45,.94)}
-.mitra-slide{flex:0 0 100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:36px 20px;box-sizing:border-box}
 .mitra-slide-logo{width:110px;height:110px;border-radius:50%;background:var(--light);box-shadow:0 4px 16px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;padding:18px;margin-bottom:18px;transition:transform .3s ease}
-.mitra-slide:hover .mitra-slide-logo{transform:translateY(-5px) scale(1.04);box-shadow:0 10px 30px rgba(0,0,0,.1)}
 .mitra-slide-logo img{max-width:100%;max-height:100%;object-fit:contain}
-.mitra-slide h4{font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:4px}
-.mitra-slide p{font-size:.82rem;color:var(--text-muted);max-width:240px;line-height:1.4}
 .mitra-slider-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--light);color:var(--dark);font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;box-shadow:var(--shadow-sm)}
 .mitra-slider-btn:hover{border-color:var(--primary);color:var(--primary)}
 .mitra-slider-prev{left:4px}
@@ -491,6 +465,6 @@ footer{content-visibility:auto;contain-intrinsic-size:600px}
 @media(max-width:768px){.location-info{gap:16px}.location-detail{padding:22px 18px}.location-map iframe{height:300px}.info-grid{gap:12px;grid-template-columns:1fr 1fr}.map-card form{grid-template-columns:1fr}.map-card h3{margin-bottom:14px}}
 @media(max-width:480px){.info-grid{grid-template-columns:1fr;gap:10px}.info-item{padding:12px}.location-detail{padding:18px 14px}}
 
-@media(max-width:768px){.carousel-scroll .scroll-x>*{flex:0 0 82%}.carousel-scroll .scroll-x.mitra-track>*{flex:0 0 220px;max-width:220px}.carousel-scroll .scroll-x.gallery-track>*{flex:0 0 260px;max-width:260px}.carousel-btn{width:30px;height:30px;font-size:.75rem}}
-@media(max-width:480px){.carousel-scroll .scroll-x>*{flex:0 0 88%}.carousel-scroll .scroll-x.mitra-track>*{flex:0 0 200px;max-width:200px}.carousel-scroll .scroll-x.gallery-track>*{flex:0 0 230px;max-width:230px}}
+@media(max-width:768px){.carousel-scroll .scroll-x>*{flex:0 0 82%}.carousel-scroll .scroll-x.mitra-track>*{flex:0 0 220px;max-width:220px}.carousel-btn{width:30px;height:30px;font-size:.75rem}}
+@media(max-width:480px){.carousel-scroll .scroll-x>*{flex:0 0 88%}.carousel-scroll .scroll-x.mitra-track>*{flex:0 0 200px;max-width:200px}}
 @media(max-width:480px){.price-box .btn-wa{font-size:.82rem;padding:13px 18px}}
